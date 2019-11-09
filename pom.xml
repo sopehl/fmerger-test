@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sopehl</groupId>
+    <artifactId>fmerger-test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.sopehl</groupId>
+                <artifactId>fmerger</artifactId>
+                <version>1.0.1-alpha</version>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>merge</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <configuration>
+                    <resourcePath>src/main/resources/</resourcePath>
+
+                    <paths>
+                        <param>okan.pehlivan</param>
+                        <param>isah.bllaca</param>
+                        <param>dummy.developer</param>
+                    </paths>
+
+                    <contentSeparator>--</contentSeparator>
+
+                    <output>
+                        <protocol>file</protocol>
+                        <finalName>paratika</finalName>
+                        <path>/Users/semihokan/fmerger</path>
+                        <extension>sql</extension>
+                    </output>
+
+                    <archive>
+                        <path>/Users/semihokan/fmerger/archive</path>
+                        <protocol>file</protocol>
+                        <snapshotPath>/Users/semihokan/fmerger/snapshot</snapshotPath>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
