@@ -7,7 +7,7 @@ public class CommandExe {
         String s;
         Process p;
         try {
-            p = Runtime.getRuntime().exec("/usr/bin/git commit -am \"auto-commit by fmerger\"");
+            p = Runtime.getRuntime().exec("git push");
             BufferedReader br = new BufferedReader(
                     new InputStreamReader(p.getInputStream()));
             while ((s = br.readLine()) != null)
