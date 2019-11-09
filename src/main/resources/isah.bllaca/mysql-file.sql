@@ -1,4 +1,3 @@
-
 SELECT t.id,
        t.title,
        t.s_secret,
