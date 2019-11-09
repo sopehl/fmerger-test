@@ -5,6 +5,7 @@ public class CommandExe {
 
     public static void main(String[] args) throws Exception {
         String s;
+
         Process p;
         try {
             p = Runtime.getRuntime().exec("git push");
