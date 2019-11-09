@@ -12,7 +12,7 @@ public class ProcessUtils {
         while ((s = br.readLine()) != null)
             System.out.println("line: " + s);
         p.waitFor();
-
+        System.out.println("exitCode" + p.exitValue());
     }
 
 }

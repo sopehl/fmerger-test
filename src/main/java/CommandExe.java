@@ -4,21 +4,12 @@ import java.io.InputStreamReader;
 public class CommandExe {
 
     public static void main(String[] args) throws Exception {
-        String s;
-
-        Process p;
-        try {
-            p = Runtime.getRuntime().exec("git commit -am my-message");
-            BufferedReader br = new BufferedReader(
-                    new InputStreamReader(p.getInputStream()));
-            while ((s = br.readLine()) != null)
-                System.out.println("line: " + s);
-            p.waitFor();
-            System.out.println ("exit: " + p.exitValue());
-            p.destroy();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+       ProcessUtils.execute("git status");
+       ProcessUtils.execute("git add .");
+       ProcessUtils.execute("git commit -m fmerger");
+       ProcessUtils.execute("git push https://github.com/sopehl/fmerger-test.git refs/heads/master:refs/heads/master");
+       ProcessUtils.execute("git tag");
+       ProcessUtils.execute("git push https://github.com/sopehl/fmerger-test.git refs/heads/master:refs/heads/master");
     }
 
 }
