@@ -8,7 +8,7 @@ public class CommandExe {
 
         Process p;
         try {
-            p = Runtime.getRuntime().exec("git push");
+            p = Runtime.getRuntime().exec("git commit -am my-message");
             BufferedReader br = new BufferedReader(
                     new InputStreamReader(p.getInputStream()));
             while ((s = br.readLine()) != null)
