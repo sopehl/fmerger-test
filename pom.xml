@@ -45,7 +45,7 @@
                         <path>/Users/semihokan/fmerger/archive</path>
                         <protocol>file</protocol>
                     </archive>
-e
+
                     <scm>
                         <connection>https://github.com/sopehl/fmerger-test.git</connection>
                         <commentPrefix>this is fmerger comment</commentPrefix>
