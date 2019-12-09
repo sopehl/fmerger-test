@@ -48,7 +48,7 @@
 
                     <scm>
                         <connection>https://github.com/sopehl/fmerger-test.git</connection>
-                        <commentPrefix>this is fmerger comment</commentPrefix>
+                        <comment>this is fmerger comment</comment>
                     </scm>
                 </configuration>
             </plugin>
