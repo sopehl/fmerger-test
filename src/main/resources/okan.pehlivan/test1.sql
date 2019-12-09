@@ -1,1 +1,1 @@
-select * from msu_user;
+select * from msu_userasdas;

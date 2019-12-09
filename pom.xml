@@ -13,7 +13,7 @@
             <plugin>
                 <groupId>com.sopehl</groupId>
                 <artifactId>fmerger</artifactId>
-                <version>1.0.1-alpha</version>
+                <version>1.0.3-alpha</version>
                 <executions>
                     <execution>
                         <phase>generate-resources</phase>
@@ -36,7 +36,7 @@
 
                     <output>
                         <protocol>file</protocol>
-                        <finalName>paratika</finalName>
+                        <finalNamePrefix>paratika</finalNamePrefix>
                         <path>/Users/semihokan/fmerger</path>
                         <extension>sql</extension>
                     </output>
