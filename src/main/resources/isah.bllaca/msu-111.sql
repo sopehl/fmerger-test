@@ -1,0 +1,1 @@
+insert into email_user_table values(1,2,3);
