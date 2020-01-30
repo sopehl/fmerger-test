@@ -42,7 +42,7 @@
                     </output>
 
                     <archive>
-                        <path>/Users/semihokan/fmerger/archive</path>
+			    <path>/home/sopehl/fmerger-out/archive</path>
                         <protocol>file</protocol>
                     </archive>
 
